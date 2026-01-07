@@ -2,12 +2,12 @@
 
 // Função responsavel por salvaros dados no arquivo
 void salvar (char tipo[], int agua, int tempo) {
-File  *arquivo;
+FILE *arquivo;
 
 // Abre o arquivo em modo de acréscimo  (append)
 arquivo = fopen ("dados_cuscuz.txt","a");
 
-if (arquivo ==NULL) {
+if (arquivo == NULL) {
     printf("Erro ao abrir o arquivo! \n");
     return;
 }
@@ -43,6 +43,6 @@ void preparar_cuscuz() {
 
 int main() {
     preparar_cuscuz();
-    retur 0;
+return 0;
 }
 
